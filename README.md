@@ -4,7 +4,7 @@
 
 
 # Purpose
-Now that you have one programming assignment within C, coupled with the use of Make and git, you are to write another program to reinforce your knowledge.  This program will also validate and exercise your knowledge of the ASCII encoding for digits ('0' - '9'), binary uncoding of unsigned integers, and the algorthm to convert ASCII digits to an unsigned value.
+Now that you have one programming assignment within C, coupled with the use of make and git, you are to write another program to reinforce your knowledge.  This program will also validate and exercise your knowledge of the ASCII encoding for digits ('0' - '9'), binary uncoding of unsigned integers, and the algorthm to convert ASCII digits to an unsigned value.
 
 # Assignment
 Your task is to develop a C program, called ascii2bin, that

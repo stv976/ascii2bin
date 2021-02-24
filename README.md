@@ -64,11 +64,11 @@ $ ascii2bin
 0101
 ^d
 5
-$ cat 65.txt  | ascii2bin
+$ cat 54356.txt  | ascii2bin
 54356
 $ cat 138.txt | ascii2bin
 138
-$ cat 2863311530.txt | ascibin
+$ cat 2863311530.txt | asciibin
 2863311530
 $ cat 4294967295.txt | asciibin
 4294967295
@@ -76,6 +76,6 @@ $ exit
 ```
 
 * Submit your assignent to Canvas with the following information:
-1. The URL to your github repo
-1. The checksum.typescript file
+  1. The URL to your github repo
+  1. The checksum.typescript file
 

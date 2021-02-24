@@ -7,7 +7,7 @@
 Now that you have one programming assignment within C, coupled with the use of Make and git, you are to write another program to reinforce your knowledge.  This program will also validate and exercise your knowledge of the ASCII encoding for digits ('0' - '9'), binary uncoding of unsigned integers, and the algorthm to convert ASCII digits to an unsigned value.
 
 # Assignment
-Your tasks is to develop a C program that
+Your task is to develop a C program, called ascii2bin, that
   * reads a string of ASCII binary digits, and 
   * outputs the equivalent decimal number 
 
@@ -17,8 +17,8 @@ For each input string your program must
   1. converts each byte into an integer value via a mathematical expression
   1. uses the resulting integer as part of the calcuation to determine the final number
   1. identifies the end of a input string by either end of file or by a new line.
-      1.  End of file is detected when read() returns the value '0'
-      2.  A new line is identified in the ASCII table as either: newline, nl, LF, or \n'
+      *  End of file is detected when read() returns the value '0'
+      *  A new line is identified in the ASCII table as either: newline, nl, LF, or \n'
   3. prints this final number on stdout
   4. returns a value of 0 upon success and 1 otherwise
 
@@ -76,6 +76,6 @@ $ exit
 ```
 
 * Submit your assignent to Canvas with the following information:
-  1. The URL to your github repo
-  1. The checksum.typescript file
+  * The URL to your github repo
+  * The checksum.typescript file
 

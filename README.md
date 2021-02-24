@@ -45,8 +45,8 @@ For each input string your program must
 ### Developement Process
 Some of you have some expertise in devoping your code on your home computer---great.  You can continue to develop your code in this way, using your favorite editory.  During this develop process, you need to continue to integrate git into your process.  
 
-Here is the development process you should following:
 
+#### Getting Started
   * Fork this github reposity to create your own repository for your project.  Do this via the github GUI.
   * Clone the repo onto your development computer:  $ git clone $URL
   * Change your working directory to where you code is located:  $ cd ascii2bin
@@ -65,35 +65,47 @@ git add ascii2bin.c
 git commit -m 'Initial version' ascii2bin.c
 ```
 
-Now you can continue to develop your code via the following processL
+  * Now create a copy on the ssh.sandbox.csun.edu server
+```
+$ ssh ssh.sandbox.csun.edu
+$ mkdir -p comp122 ; cd comp122              # Optional: create a subdirectory for comp122
+$ git clone $URL                             # Clone your repo
+$ cd ascii2bin                               # Change to the correct working directory
+$ ls                                         # Review that you have all the files from the repo
+$ exit
+```
 
-  * REPEAT
+#### Continuing to develop your code on your laptop or on ssh.sandbox.csun.edu
+
+* REPEAT
     * REPEAT
       1. update your ascii2bin.c program
       1. recompile the code to validate it compiles correctly, etc.
       1. perform some test case
-    UNTIL Things are working to some degree
+    * UNTIL you are satisfied 
     * commit your changes to your local git repo
     ```
        $ git status
        $ git add ascii2bin.c
        $ git commit -m 'Revised Message'
     ```
-   * if your code is good enough to share, commit it to your remote repo:  $ git push
-   * take a break
+    * if your code is good enough to share, push it to your remote repo
+    ```
+      $ git push
+    ```
+    * take a break
 * UNTIL complete
 
 
 ### Final Validate and Submission
 To obtain credit for this assignment, you must ensure your program works correctly on ssh.sandbox.csun.edu.  This server is shared resource in which you can finalize you work and the professor can validate this work.  The final steps for validation are as follows:
 
-* Clone your github repo onto ssh.sandbox.csun.edu
+* Update repo on ssh.sandbox.csun.edu
 ```
 $ ssh ssh.sandbox.csun.edu
-$ mkdir -p comp122 ; cd comp122              # Optional: create a subdirectory for comp122
-$ git clone $URL                             # Clone your repo
-$ cd ascii2bin                               # Change to the correct working directory
-$ make                                       # Use the make command to build all necessary software components 
+$ cd comp122/ascii2bin
+$ git pull
+$ make    
 ```
 
 * Test your program:
@@ -113,7 +125,12 @@ $ cat 4294967295.txt | asciibin
 4294967295
 $ exit
 ```
+* Copy the typescript file from the server
+```
+$ scp  ssh.sandbox.csun.edu:comp122/ascii2bin/ascii2bin.typescript .
+```
 
+### Submission
 * Submit your assignent to Canvas with the following information:
   * The URL to your github repo
   * The checksum.typescript file

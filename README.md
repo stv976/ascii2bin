@@ -1,6 +1,6 @@
-# ascii2binary
+# ascii2bin
 
-### COMP 122: Converting ASCII digits to a binary number.
+### COMP 122: Converting ASCII digits to a number.
 
 
 # Purpose
@@ -42,8 +42,47 @@ For each input string your program must
 1. Each ASCII input character is one of the following characters: '0', '1', or '\n'
 1. The calculated number does not exceed 2^32
 
-### Starter Code:
-Pull the starter code from you last C program.
+### Developement Process
+Some of you have some expertise in devoping your code on your home computer---great.  You can continue to develop your code in this way, using your favorite editory.  During this develop process, you need to continue to integrate git into your process.  
+
+Here is the development process you should following:
+
+  * Fork this github reposity to create your own repository for your project.  Do this via the github GUI.
+  * Clone the repo onto your development computer:  $ git clone $URL
+  * Change your working directory to where you code is located:  $ cd ascii2bin
+  * Create your first version of you ascii2bin.c file: $ touch ascii2bin.c
+  * Run the make command to build anything the Professor is providing you: $ make
+  * Introduce ascii2bin.c to your local repo: $ git add ascii2bin.c
+  * Commit ascii2bin.c to your local repo:  $ git commit -m 'Initial version' ascii2bin.c
+
+To recap:
+```
+git clone https://github.com/COMP122/ascii2bin.git    # for example
+cd ascii2bin
+touch ascii2bin
+make
+git add ascii2bin.c
+git commit -m 'Initial version' ascii2bin.c
+```
+
+Now you can continue to develop your code via the following processL
+
+  * REPEAT
+    * REPEAT
+      1. update your ascii2bin.c program
+      1. recompile the code to validate it compiles correctly, etc.
+      1. perform some test case
+    UNTIL Things are working to some degree
+    * commit your changes to your local git repo
+    ```
+       $ git status
+       $ git add ascii2bin.c
+       $ git commit -m 'Revised Message'
+    ```
+   * if your code is good enough to share, commit it to your remote repo:  $ git push
+   * take a break
+* UNTIL complete
+
 
 ### Final Validate and Submission
 To obtain credit for this assignment, you must ensure your program works correctly on ssh.sandbox.csun.edu.  This server is shared resource in which you can finalize you work and the professor can validate this work.  The final steps for validation are as follows:
@@ -53,7 +92,7 @@ To obtain credit for this assignment, you must ensure your program works correct
 $ ssh ssh.sandbox.csun.edu
 $ mkdir -p comp122 ; cd comp122              # Optional: create a subdirectory for comp122
 $ git clone $URL                             # Clone your repo
-$ cd ascii2binary                            # Change to the correct working directory
+$ cd ascii2bin                               # Change to the correct working directory
 $ make                                       # Use the make command to build all necessary software components 
 ```
 

@@ -126,14 +126,20 @@ $ ascii2bin
 0101
 ^d
 5
-$ cat 54356.txt  | ascii2bin
+$ cat 54356.txt  | ./ascii2bin ; echo $?
 54356
-$ cat 138.txt | ascii2bin
+0
+$ cat 138.txt | ./ascii2bin ; echo $?
 138
-$ cat 2863311530.txt | asciibin
+0
+$ cat 2863311530.txt | ./ascii2bin ; echo $?
 2863311530
-$ cat 4294967295.txt | asciibin
+0
+$ cat 4294967295.txt | ./ascii2bin ; echo $?
 4294967295
+0
+$ cat error.txt | ./ascii2bin ; echo $?
+1
 $ exit
 ```
 * Download the typescript file from the server

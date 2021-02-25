@@ -68,12 +68,12 @@ Some of you have some expertise in devoping your code on your home computer---gr
 
 To recap:
 ```
-git clone https://github.com/COMP122/ascii2bin.git    # for example
-cd ascii2bin
-touch ascii2bin
-make
-git add ascii2bin.c
-git commit -m 'Initial version' ascii2bin.c
+$ git clone https://github.com/COMP122/ascii2bin.git    # for example
+$ cd ascii2bin
+$ touch ascii2bin
+$ make
+$ git add ascii2bin.c
+$ git commit -m 'Initial version' ascii2bin.c
 ```
 
   * Now create a copy on the ssh.sandbox.csun.edu server

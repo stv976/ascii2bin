@@ -59,12 +59,12 @@ Some of you have some expertise in devoping your code on your home computer---gr
 
 ## The Initial Step
   * Fork this github reposity to create your own repository for your project.  Do this via the github GUI.
-  * Clone the repo onto your development computer:  $ git clone $URL
-  * Change your working directory to where you code is located:  $ cd ascii2bin
-  * Create your first version of you ascii2bin.c file: $ touch ascii2bin.c
-  * Run the make command to build anything the Professor is providing you: $ make
-  * Introduce ascii2bin.c to your local repo: $ git add ascii2bin.c
-  * Commit ascii2bin.c to your local repo:  $ git commit -m 'Initial version' ascii2bin.c
+  * Clone the repo onto your development computer
+  * Change your working directory to where you code is located
+  * Create your first version of you ascii2bin.c file
+  * Run the make command to build anything the Professor is providing you
+  * Introduce ascii2bin.c to your local repo
+  * Commit ascii2bin.c to your local repo
 
 To recap:
 ```
@@ -79,7 +79,7 @@ git commit -m 'Initial version' ascii2bin.c
   * Now create a copy on the ssh.sandbox.csun.edu server
 ```
 $ ssh ssh.sandbox.csun.edu
-$ mkdir -p comp122 ; cd comp122              # Optional: create a subdirectory for comp122
+$ mkdir -p comp122 ; cd comp122              # Change your working directo to by you comp122 directory
 $ git clone $URL                             # Clone your repo
 $ cd ascii2bin                               # Change to the correct working directory
 $ ls                                         # Review that you have all the files from the repo
@@ -108,10 +108,10 @@ $ exit
 * UNTIL complete
 
 
-# Final Validate and Submission
+# Final Validation and Submission
 To obtain credit for this assignment, you must ensure your program works correctly on ssh.sandbox.csun.edu.  This server is shared resource in which you can finalize you work and the professor can validate this work.  The final steps for validation are as follows:
 
-* Update repo on ssh.sandbox.csun.edu
+* Update the repo on ssh.sandbox.csun.edu"
 ```
 $ ssh ssh.sandbox.csun.edu
 $ cd comp122/ascii2bin
@@ -136,7 +136,7 @@ $ cat 4294967295.txt | asciibin
 4294967295
 $ exit
 ```
-* Copy the typescript file from the server
+* Download the typescript file from the server
 ```
 $ scp  ssh.sandbox.csun.edu:comp122/ascii2bin/ascii2bin.typescript .
 ```

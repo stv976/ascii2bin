@@ -111,7 +111,7 @@ $ exit
 # Final Validation and Submission
 To obtain credit for this assignment, you must ensure your program works correctly on ssh.sandbox.csun.edu.  This server is shared resource in which you can finalize you work and the professor can validate this work.  The final steps for validation are as follows:
 
-* Update the repo on ssh.sandbox.csun.edu"
+* Update the repo on ssh.sandbox.csun.edu:
 ```
 $ ssh ssh.sandbox.csun.edu
 $ cd comp122/ascii2bin

@@ -4,23 +4,32 @@
 
 
 # Purpose
-Now that you have one programming assignment within C, coupled with the use of make and git, you are to write another program to reinforce your knowledge.  This program will also validate and exercise your knowledge of the ASCII encoding for digits ('0' - '9'), binary uncoding of unsigned integers, and the algorthm to convert ASCII digits to an unsigned value.
+Now that you have completed one programming assignment in C, coupled with the use of make and git, it is time to continue to practice writting more code.  This simple coding assignment is based upon the information you are learning in class about various encoding schemes; in particular, the encodings of ASCII characters and binary numbers.   Moreover, this assignment will help you to better understand the algorithm used to convert binary numbers into decimal numbers.
+
+In summary, the purpose of this assignment is:
+
+* to continue your exposure to C, make, and Git
+* to ensure you understand the difference between ASCII numbers and binary numbers
+* to validate you understand how to convert a binary number into a decimal number
+
+The description of this assignment has includes a more detail information about the development process.  The various git commands during this process our provided to help you more quickly learn git.
+
 
 # Assignment
 Your task is to develop a C program, called ascii2bin, that
-  * reads a string of ASCII binary digits, and 
+  * reads a string of 1's and 0's as ASCII digits, and 
   * outputs the equivalent decimal number 
 
-For each input string your program must
-  1. exercises the read() system call to read a single byte at a time from stdin
+Your program must
+  1. exercises the read() system call to read a single byte, at a time, from stdin
   1. validate that the read byte is appropriate for conversion, e.g., it must be either an ASCII '0' or '1'
   1. converts each byte into an integer value via a mathematical expression
   1. uses the resulting integer as part of the calcuation to determine the final number
   1. identifies the end of a input string by either end of file or by a new line.
       *  End of file is detected when read() returns the value '0'
       *  A new line is identified in the ASCII table as either: newline, nl, LF, or \n'
-  3. prints this final number on stdout
-  4. returns a value of 0 upon success and 1 otherwise
+  1. prints this final number on stdout
+  1. returns a value of 0 upon success and 1 otherwise
 
 
 ### The Algorithm
@@ -31,7 +40,7 @@ For each input string your program must
     retval = read(0, &ascii_value, 1);
     while (retval == 1)
         digit = ascii_value - offset;
-        number = number << 1 + digit;  // same thing as: number = number * 2 + digit; 
+        number = number << 1 + digit;  
         retval = read(0, &ascii_value, 1);
         
     printf("%d\n", number);
@@ -39,14 +48,16 @@ For each input string your program must
 ```
 
 ### Validation Checks:
+You should add addtional validate checks in your code to catch potential errors. At a minimum, validate the following:
 1. Each ASCII input character is one of the following characters: '0', '1', or '\n'
 1. The calculated number does not exceed 2^32
 
-### Developement Process
+
+# Your Developement Process
 Some of you have some expertise in devoping your code on your home computer---great.  You can continue to develop your code in this way, using your favorite editory.  During this develop process, you need to continue to integrate git into your process.  
 
 
-#### Getting Started
+## The Initial Step
   * Fork this github reposity to create your own repository for your project.  Do this via the github GUI.
   * Clone the repo onto your development computer:  $ git clone $URL
   * Change your working directory to where you code is located:  $ cd ascii2bin
@@ -75,7 +86,7 @@ $ ls                                         # Review that you have all the file
 $ exit
 ```
 
-#### Continuing to develop your code on your laptop or on ssh.sandbox.csun.edu
+## Going Forward
 
 * REPEAT
     * REPEAT
@@ -97,7 +108,7 @@ $ exit
 * UNTIL complete
 
 
-### Final Validate and Submission
+# Final Validate and Submission
 To obtain credit for this assignment, you must ensure your program works correctly on ssh.sandbox.csun.edu.  This server is shared resource in which you can finalize you work and the professor can validate this work.  The final steps for validation are as follows:
 
 * Update repo on ssh.sandbox.csun.edu

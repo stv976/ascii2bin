@@ -12,7 +12,7 @@ In summary, the purpose of this assignment is:
 * to ensure you understand the difference between ASCII numbers and binary numbers
 * to validate you understand how to convert a binary number into a decimal number
 
-The description of this assignment has includes a more detail information about the development process.  The various git commands during this process our provided to help you more quickly learn git.
+The description of this assignment also includes more detail information about the suggestive development process.  The various git commands usind within the process are provide to help you along your way.
 
 
 # Assignment

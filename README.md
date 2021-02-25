@@ -12,7 +12,7 @@ In summary, the purpose of this assignment is:
 * to ensure you understand the difference between ASCII numbers and binary numbers
 * to validate you understand how to convert a binary number into a decimal number
 
-The description of this assignment also includes more detail information about the suggestive development process.  The various git commands usind within the process are provide to help you along your way.
+The description of this assignment also includes more detailed information about a suggestive development process.  The various git commands usind within this process are provided to help you along your way.
 
 
 # Assignment
@@ -25,7 +25,7 @@ Your program must
   1. validate that the read byte is appropriate for conversion, e.g., it must be either an ASCII '0' or '1'
   1. converts each byte into an integer value via a mathematical expression
   1. uses the resulting integer as part of the calcuation to determine the final number
-  1. identifies the end of a input string by either end of file or by a new line.
+  1. identifies the end of a input string by either end of file or by a new line
       *  End of file is detected when read() returns the value '0'
       *  A new line is identified in the ASCII table as either: newline, nl, LF, or \n'
   1. prints this final number on stdout

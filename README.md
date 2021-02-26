@@ -48,21 +48,21 @@ Your program must
 ```
 
 ### Validation Checks:
-You should add addtional validate checks in your code to catch potential errors. At a minimum, validate the following:
-1. Each ASCII input character is one of the following characters: '0', '1', or '\n'
-1. The calculated number does not exceed 2^32
+You should add additional validation checks to your code to catch potential errors. At a minimum, validate the following:
+  * that each ASCII input character is one of the following characters: '0', '1', or '\n'
+  * that the calculated number does not exceed 2^32
 
 
 # Your Developement Process
-Some of you have some expertise in devoping your code on your home computer---great.  You can continue to develop your code in this way, using your favorite editory.  During this develop process, you need to continue to integrate git into your process.  
+Some of you have some expertise in devoping your code on your home computer---great.  You can continue to develop your code in this way, using your favorite editor.  During your work, you need to continue to integrate git into your process.  
 
 
 ## The Initial Step
-  * Fork this github reposity to create your own repository for your project.  Do this via the github GUI.
-  * Clone the repo onto your development computer
-  * Change your working directory to where you code is located
-  * Create your first version of you ascii2bin.c file
-  * Run the make command to build anything the Professor is providing you
+  * Fork this github repository to create your own version of the project.  You can perform this operatin via the github GUI.
+  * Clone the repo onto your development computer.
+  * Change your working directory to where your code is located.
+  * Create your first version of your ascii2bin.c file.
+  * Run the make command to build anything the Professor is providing to you, like test cases.
   * Introduce ascii2bin.c to your local repo
   * Commit ascii2bin.c to your local repo
 
@@ -70,7 +70,7 @@ To recap:
 ```
 $ git clone https://github.com/COMP122/ascii2bin.git    # for example
 $ cd ascii2bin
-$ touch ascii2bin
+$ touch ascii2bin.c
 $ make
 $ git add ascii2bin.c
 $ git commit -m 'Initial version' ascii2bin.c
@@ -91,8 +91,8 @@ $ exit
 * REPEAT
     * REPEAT
       1. update your ascii2bin.c program
-      1. recompile the code to validate it compiles correctly, etc.
-      1. perform some test case
+      1. recompile the code, via the make command, to validate it compiles correctly, etc.
+      1. perform some test case  (Consider using the command:  make test )
     * UNTIL you are satisfied 
     * commit your changes to your local git repo
     ```
@@ -109,7 +109,7 @@ $ exit
 
 
 # Final Validation and Submission
-To obtain credit for this assignment, you must ensure your program works correctly on ssh.sandbox.csun.edu.  This server is shared resource in which you can finalize you work and the professor can validate this work.  The final steps for validation are as follows:
+To obtain credit for this assignment, you must ensure your program works correctly on ssh.sandbox.csun.edu.  This server is a shared resource in which you can finalize you work and the professor can validate this work.  The final steps for validation are as follows:
 
 * Update the repo on ssh.sandbox.csun.edu:
 ```

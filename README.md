@@ -65,6 +65,7 @@ Some of you have some expertise in devoping your code on your home computer---gr
   * Run the make command to build anything the Professor is providing to you, like test cases.
   * Introduce ascii2bin.c to your local repo
   * Commit ascii2bin.c to your local repo
+  * Push this version to the remote repo
 
 To recap:
 ```
@@ -74,6 +75,7 @@ $ touch ascii2bin.c
 $ make
 $ git add ascii2bin.c
 $ git commit -m 'Initial version' ascii2bin.c
+$ git push
 ```
 
   * Now create a copy on the ssh.sandbox.csun.edu server
